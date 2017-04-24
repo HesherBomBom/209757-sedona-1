@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/vendor/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <div class="main-container">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <img class="sedona-logo" src="img/logo-sedona.png" alt="Логотип Седоны">
+          <ul class="clearfix">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+            <li><a href="#">Карта штата</a></li>
+          </ul>
+        </nav>
+        <div class="intro">
+          <img src="img/welcome.png" alt="Welcome to the gorgeous" width="458" height="352">
+        </div>
+      </header>
+      <main>
+        <h2 class="title-secondary">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <span class="subtitle">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</span>
+        <section class="reasons">
+          <div class="reasons-wrapper reason-blue">
+            <div class="reason reason-blue">
+              <b class="reason-title">Настоящий городок</b>
+              <span class="reason-nmb">№1</span>
+              <p class="reason-text">Седона &mdash; не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reason-img"><img src="img/sedona.jpg" width="800" alt="Седона"></div>
+          </div>
+          <div class="features-wrapper">
+            <div class="feature feature-house">
+              <b class="feature-title">Жилье</b>
+              <p class="feature-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="feature feature-food">
+              <b class="feature-title">Еда</b>
+              <p class="feature-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="feature feature-gift">
+              <b class="feature-title">Сувениры</b>
+              <p class="feature-text">Не только китайского, но и местного произвдоства!</p>
+            </div>
+          </div>
+          <div class="reasons-wrapper reason-blue">
+            <div class="reason-img"><img src="img/bridge.jpg" width="800" alt="Мост Дьявола"></div>
+            <div class="reason reason-blue">
+              <b class="reason-title">Там есть Мост&nbsp;Дьявола</b>
+              <span class="reason-nmb">№2</span>
+              <p class="reason-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+            </div>
+          </div>
+          <div class="reasons-wrapper">
+            <div class="reason">
+              <b class="reason-title">Небольшая площадь</b>
+              <span class="reason-nmb">№3</span>
+              <p class="reason-text">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="reason">
+              <b class="reason-title">Красивая дорога</b>
+              <span class="reason-nmb">№4</span>
+              <p class="reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="reason">
+              <b class="reason-title">Мало туристов</b>
+              <span class="reason-nmb">№5</span>
+              <p class="reason-text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </div>
+        </section>
+        <section class="booking">
+          <h2 class="title-secondary">Заинтересовались?</h2>
+          <p class="subtitle">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button class="modal-header">Поиск гостиницы в Седоне</button>
+          <form class="booking-form" action="?">
+            <div class="form-group">
+              <label for="checkin-date">Дата заезда:</label>
+              <input id="checkin-date" type="text" value="24 апреля 2016">
+              <i class="icon icon-calendar"></i>
+            </div>
+            <div class="form-group">
+              <label for="checkout-date">Дата выезда:</label>
+              <input id="checkout-date" type="text" value="4 июля 2016">
+              <i class="icon icon-calendar"></i>
+            </div>
+            <div class="form-group to-left">
+              <label for="adults-number">Взрослые:</label>
+              <div class="input-count-wrapper">
+                <i class="icon icon-minus"></i>
+                <input id="adults-number" type="number" value="2">
+                <i class="icon icon-plus"></i>
+              </div>
+            </div>
+            <div class="form-group to-right">
+              <label for="kids-number">Дети:</label>
+              <div class="input-count-wrapper">
+                <i class="icon icon-minus"></i>
+                <input id="kids-number" type="number" value="0">
+                <i class="icon icon-plus"></i>
+              </div>
+            </div>
+            <button class="booking-btn" type="submit">Найти</button>
+          </form>
+        </section>
+      </main>
+      <footer class="map-footer">
+          <div class="map"><img src="img/map.jpg" width="1200" height="593" alt="Карта"></div>
+          <div class="main-footer main-footer-index">
+            <div class="footer-hashtag"><b>#VisitSedona</b></div>
+            <div class="footer-social">
+              <a href="#" title="Мы в Twitter"><i class="icon-twitter"></i></a>
+              <a href="#" title="Мы в Facebook"><i class="icon-facebook"></i></a>
+              <a href="#" title="Мы на Youtube"><i class="icon-youtube"></i></a>
+            </div>
+            <div class="footer-copyright">
+              <p>Website by</p>
+              <a href="https://htmlacademy.ru"><i class="sprite-html-logo"></i></a>
+            </div>
+          </div>
+        </footer>
+    </div>
   </body>
 </html>
