@@ -18,6 +18,20 @@ button {
   font-family: inherit;
 }
 
+legend {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin-right: 12px;
+}
+
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -549,5 +563,282 @@ main > .subtitle {
 }
 
 .hotels-header {
-  outline: 1px dotted yellow;
+  background: #dceaf3 url("../img/background-hotels.jpg") no-repeat 0 0;
+  margin-bottom: 26px;
 }
+
+.hotels-navigation {
+  margin-bottom: 0px;
+}
+
+.hotels-form {
+  padding: 27px 73px 5px;
+  margin-bottom: 11px;
+}
+
+.amenities {
+  float: left;
+  width: 240px;
+}
+
+.accomondation-type {
+  float: left;
+  width: 290px;
+}
+
+.price-range {
+  float: right;
+  width: 330px;
+}
+
+.filter {
+  display: none;
+}
+
+.filter-label {
+  line-height: 21px;
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  vertical-align: top;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.filter + .filter-label::before {
+  content: "\2610";
+  font-family: "symbols-sedona";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 26px;
+  margin-right: 19px;
+}
+
+.filter:checked + .filter-label::before {
+  content: "\2611";
+  margin-right: 15px;
+}
+
+.filter:disabled + .filter-label::before,
+.filter:disabled + .filter-label {
+  color: #6a6a6a;
+  cursor: not-allowed;
+}
+
+.filter-range {
+  float: right;
+  width: 320px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+  height: 36px;
+  margin-bottom: 20px;
+  font-size: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 157px;
+  padding-left: 65px;
+}
+
+.min-price {
+  margin-right: 2px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0 5px;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 18px;
+  height: 18px;
+  background: #ababab;
+  border: 7px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000;
+  background: #fff;
+}
+
+.sorters {
+  margin: 0 73px;
+
+  outline: 1px dotted red;
+}
+
+.sorter {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.sorter:not(.arr) {
+  color: #b7b7b7;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sorter:not(.arr):hover {
+  color: #81b3d2;
+  cursor: pointer;
+}
+
+.sorter:not(.arr):not(.btn-active):active {
+  color: #000;
+  border: none;
+}
+
+.sorter.btn-active {
+  color: #81b3d2;
+  border: none;
+  outline: none;
+}
+
+.sorter.btn-active:hover {
+  cursor: default;
+}
+
+.sorters-left {
+  float: left;
+  font-size: 0;
+  vertical-align: baseline;
+}
+
+.sorters-right {
+  float: right;
+}
+
+.sorters-results {
+  margin-right: 48px;
+  font-size: 21px;
+}
+
+.sorters-type,
+.sorter:not(.arr) {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.sorter:not(.arr) {
+  margin-right: 33px;
+}
+
+.sorter:last-child {
+  margin-right: 0;
+}
+
+.sorter.arr {
+  color: #b7b7b7;
+}
+
+.sorter.arr:not(.arr-active):hover {
+  color: #000;
+}
+
+.sorter.arr:not(.arr-active):active {
+  color: #81b3d2;
+}
+
+.sorter.arr-active {
+  color: #81b3d2;
+}
+
+.sorter.arr:first-child {
+  margin-right: 10px;
+}
+
+.sorters-results,
+.sorters-type,
+.sorter {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+
