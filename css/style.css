@@ -503,7 +503,7 @@ main > .subtitle {
   display: inline-block;
   width: 46px;
   height: 48px;
-  margin-right: 5px;
+  margin-right: 6px;
   font-size: 21px;
   line-height: 48px;
   text-decoration: none;
@@ -538,11 +538,12 @@ main > .subtitle {
 .footer-copyright p {
   font-size: 14px;
   vertical-align: middle;
-  margin: 0 8px 0 0;
+  margin: 2px 8px 0 16px;
 }
 
 .footer-copyright a {
   vertical-align: middle;
+  margin-top: 5px;
 }
 
 .sprite-html-logo {
@@ -748,9 +749,7 @@ main > .subtitle {
 }
 
 .sorters {
-  margin: 0 73px;
-
-  outline: 1px dotted red;
+  margin: 0 73px 26px;
 }
 
 .sorter {
@@ -791,6 +790,7 @@ main > .subtitle {
 }
 
 .sorters-right {
+  padding-top: 7px;
   float: right;
 }
 
@@ -841,4 +841,111 @@ main > .subtitle {
   vertical-align: baseline;
 }
 
+.hotel-row {
+  border-top: 1px solid #e5e5e5;
+  padding: 30px 72px;
+}
 
+.hotel-pic {
+  float: left;
+  margin-right: 30px;
+  font-size: 0;
+}
+
+.hotel-content {
+  float: left;
+}
+
+.hotel-title {
+  text-decoration: none;
+  color: #000;
+  font-size: 21px;
+  line-height: 0;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hotel-info {
+  margin-bottom: 15px;
+  margin-top: 4px;
+}
+
+.hotel-type {
+  display: inline-block;
+  width: 78px;
+  margin-right: 34px;
+}
+
+.hotel-btns a {
+  line-height: 1.5;
+  text-decoration: none;
+  color: #fff;
+  font-family: "PT Sans", Tahoma, sans-serif;
+  padding: 4px 17px;
+}
+
+.more{
+  background-color: #81b3d2;
+  margin-right: 2px;
+}
+
+.book {
+  background-color: #766357;
+}
+
+.ratings {
+  float: right;
+  text-align: right;
+}
+
+.stars {
+  font-size: 23px;
+  letter-spacing: 4px;
+  line-height: 0.6;
+  color: #81b3d2;
+  margin-right: -5px;
+  margin-bottom: 52px;
+}
+
+.rating {
+  margin-right: 12px;
+  background-color: transparent;
+}
+
+.footer-hotels {
+  padding: 36px 73px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer-hotels .footer-hashtag,
+.footer-hotels .footer-social {
+  float: left;
+}
+
+.footer-hotels .footer-copyright {
+  float: right;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-hotels .footer-social {
+  width: 400px;
+  font-size: 0;
+}
+
+.footer-hotels .footer-hashtag,
+.footer-hotels .footer-copyright {
+  width: 240px;
+}
+
+.footer-hotels .footer-hashtag {
+  margin-right: 27px;
+  margin-top: 5px;
+  margin-left: 59px;
+}
+
+.footer-hotels .footer-social {
+  padding: 0 125px;
+}
